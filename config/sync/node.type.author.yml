@@ -1,0 +1,17 @@
+uuid: b9d40117-016b-4bbd-b6ba-5f68c18e5137
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Auteur
+type: author
+description: 'Ce sont les différents auteurs d''articles sur le site'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

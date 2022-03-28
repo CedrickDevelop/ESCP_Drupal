@@ -1,0 +1,5 @@
+name: ESCP - blog - exam final Coding Pool 2022 module
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: ESCP - blog - exam final Coding Pool 2022

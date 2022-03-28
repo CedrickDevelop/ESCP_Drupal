@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: kJjhnQkv7xXyOaSKE_r54J5ut1idVHiXTjQno13keiE
+langcode: fr
+uuid: bcd80fd5-4624-4e9e-8658-6a431a84100a
+name: 'ESCP - blog - exam final Coding Pool 2022'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /front
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

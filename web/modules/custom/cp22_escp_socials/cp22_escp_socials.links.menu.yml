@@ -1,0 +1,24 @@
+####
+cp22_escp_socials.taxo.socials:
+  title: "Les réseaux sociaux"
+  parent: cp22_escp_global.taxo
+  menu_name: contrib
+  url: internal:/admin/structure/taxonomy/manage/social_network/overview
+  weight: 0
+
+####
+cp22_escp_socials.taxo.socials.show:
+  title: "Voir les réseaux sociaux"
+  parent: cp22_escp_socials.taxo.socials
+  menu_name: contrib
+  url: internal:/admin/structure/taxonomy/manage/social_network/overview
+  weight: 0
+
+####
+cp22_escp_socials.taxo.socials.add:
+  title: "Ajouter des réseaux sociaux"
+  parent: cp22_escp_socials.taxo.socials
+  menu_name: contrib
+  url: internal:/admin/structure/taxonomy/manage/social_network/add
+  weight: 1
+

@@ -1,0 +1,112 @@
+.NodeWrapper {
+  .NodeArticleForListPage {
+    height: 30rem;
+    width: 124.2rem;
+    margin: 3.8rem 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color:$color-white ;
+    box-shadow: 0 0.3rem 0.6rem  $color-box-shadow-list-page;
+    border: 1px solid $background-list-page;
+
+    &-visual{
+
+      width: 49rem;
+      max-width: 49rem;
+
+      img {
+        //height: 100%;
+      }
+
+      .copyright{
+        display: none;
+      }
+    }
+
+    &-contentWrapper {
+
+      width: 75.2rem;
+      max-width: 75.2rem;
+      padding-top: 2.1rem;
+      padding-left: 3rem;
+      padding-bottom: 2.2rem;
+      padding-right: 2.9rem;
+
+      .ContentArticle {
+
+        color: $color-black;
+        font-weight: 400;
+
+        &-themes {
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 2rem;
+          line-height: 2.4rem;
+        }
+
+        &-created {
+          margin-top: 1.896rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          font-family: $font-body;
+
+          .createdDateAuthor {
+            align-items: center;
+            margin-top: 1.896rem;
+
+            &-date {
+              font-size: 1.628rem;
+              line-height: 2rem;
+            }
+
+            &-author {
+              font-size: 1.628rem;
+              line-height: 2rem;
+
+              span {
+                display: inline-block;
+              }
+              .NodeAuthor-name {
+                display: inline-block;
+              }
+            }
+
+
+          }
+
+
+        }
+
+        &-title {
+          margin-top: 1.904rem;
+
+          font-weight: 500;
+          text-align: left;
+          font-size: 2.4rem;
+          line-height: 2.7rem;
+        }
+
+        &-chapo {
+          margin-top: 2.7rem;
+          font-size: 2.4rem;
+          line-height: 2.7rem;
+          font-weight: 300;
+
+          p {
+            display: inline;
+          }
+
+          span {
+            display: inline;
+          }
+
+        }
+      }
+    }
+
+  }
+}

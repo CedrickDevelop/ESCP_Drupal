@@ -1,0 +1,32 @@
+
+<article class="NodeWrapper ParagraphSuggestion" >
+
+  <div class="ParagraphSuggestion-visual" >
+{#    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_visual }}</a>#}
+  </div>
+
+  <div class="ParagraphSuggestion-contentWrapper ContentArticle">
+    <h4 class="ContentArticle-themes">
+{#      <a href="{{ path('entity.taxonomy_term.canonical', {'taxonomy_term': node.field_theme.target_id}) }}">#}
+        <strong>{{ content.field_theme }}</strong>
+      </a>
+    </h4>
+
+    <div class="ContentArticle-chapo">
+      {{ content.field_chapo_long }} <span>...</span>
+    </div>
+
+    <div class="ContentArticle-created createdDateAuthor">
+      <div class="createdDateAuthor-date">
+{#        {{ node.getCreatedTime()|format_date('custom','j M Y') }}#}
+      </div>
+
+      <div class="createdDateAuthor-author">
+        <span>par</span>{{ content.field_author }}
+      </div>
+    </div>
+
+  </div>
+
+
+</article>

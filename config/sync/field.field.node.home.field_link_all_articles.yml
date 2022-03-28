@@ -1,0 +1,19 @@
+uuid: e68a66aa-cb0f-4c77-a62f-7aeb9e94d84f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_all_articles
+    - node.type.home
+id: node.home.field_link_all_articles
+field_name: field_link_all_articles
+entity_type: node
+bundle: home
+label: 'Libellé du lien vers page de liste des articles'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

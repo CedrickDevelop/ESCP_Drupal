@@ -1,0 +1,30 @@
+uuid: 74a25a95-b551-476e-a561-d70f93d434ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.suggestions.field_articles
+    - field.field.paragraph.suggestions.field_title
+    - paragraphs.paragraphs_type.suggestions
+id: paragraph.suggestions.default
+targetEntityType: paragraph
+bundle: suggestions
+mode: default
+content:
+  field_articles:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

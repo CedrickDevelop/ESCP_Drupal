@@ -1,0 +1,31 @@
+uuid: f05ed99c-336e-40a0-bec1-f160b975b30b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser_articles
+  module:
+    - views
+name: eb_articles
+label: 'Entity Browser -Articles'
+display: modal
+display_configuration:
+  width: '850'
+  height: '600'
+  link_text: Sélectionner
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6a45d2d3-38b5-4154-8c74-33060e0a6efa:
+    id: view
+    uuid: 6a45d2d3-38b5-4154-8c74-33060e0a6efa
+    label: 'Paragraphes pour la page articles'
+    weight: 1
+    settings:
+      submit_text: 'Ajouter des paragraphes'
+      auto_select: false
+      view: entity_browser_articles
+      view_display: entity_browser_1

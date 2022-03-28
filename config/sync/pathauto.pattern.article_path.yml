@@ -1,0 +1,22 @@
+uuid: c8f0f972-514f-4a2f-8f14-d9fc837fc240
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: article_path
+label: 'chemin article node'
+type: 'canonical_entities:node'
+pattern: '/[node:field_theme:entity:name]/[node:title]'
+selection_criteria:
+  7649781c-1d81-434d-bef3-e3dc6fa82242:
+    id: node_type
+    negate: false
+    uuid: 7649781c-1d81-434d-bef3-e3dc6fa82242
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+selection_logic: and
+weight: -5
+relationships: {  }

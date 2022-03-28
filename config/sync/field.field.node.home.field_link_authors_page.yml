@@ -1,0 +1,19 @@
+uuid: 1f348656-8aba-4890-a067-d27be0ec6e10
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_authors_page
+    - node.type.home
+id: node.home.field_link_authors_page
+field_name: field_link_authors_page
+entity_type: node
+bundle: home
+label: 'Libellé du lien vers page de liste des auteurs'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: af62e411-e976-4d7e-bdb3-546bfe0641d9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: database
+name: Database
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 2
+  matching: prefix

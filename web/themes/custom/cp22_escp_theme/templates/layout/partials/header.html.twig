@@ -1,0 +1,43 @@
+<header id="Header" class="HeaderWrapper">
+
+  <div class="HeaderWrapper TopHeader" >
+
+    <div class="TopHeader-logo">
+      <a href="{{ front_page }}" title="{{ "Retour à la page d'accueil"|t }}">
+        <img src="{{ logo_url }}" alt="{{ "logo ESPC"|t }}" >
+      </a>
+    </div>
+
+    <div class="TopHeader-title">
+      {{ header.headertitleblock }}
+    </div>
+
+    <div class="TopHeader-language">
+      {{header.selecteurdelangue}}
+    </div>
+
+  </div>
+
+  <div class="HeaderWrapper BottomHeader">
+    <div class="BottomHeader-menuMain" >
+      {{ header.navigationprincipale}}
+    </div>
+
+    <div class="BottomHeader-search">
+      {{ header.global_search }}
+{#      <img src="./loupe.png" alt="{{ 'search'|t }}">#}
+    </div>
+
+    <div class="BottomHeader-buttonSearch">
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</header>

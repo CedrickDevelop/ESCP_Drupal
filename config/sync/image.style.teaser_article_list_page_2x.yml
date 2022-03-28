@@ -1,0 +1,15 @@
+uuid: d439bfd7-a585-4928-b03a-8e7864e27f67
+langcode: fr
+status: true
+dependencies: {  }
+name: teaser_article_list_page_2x
+label: 'Teaser Article Page de liste (980 x 600)'
+effects:
+  77a7db4e-7a05-43e4-aea0-58624550acc7:
+    uuid: 77a7db4e-7a05-43e4-aea0-58624550acc7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 980
+      height: 600
+      anchor: center-center

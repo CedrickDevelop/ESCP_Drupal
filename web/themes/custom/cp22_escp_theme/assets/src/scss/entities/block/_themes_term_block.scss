@@ -1,0 +1,51 @@
+.TaxonomyThemes-termWrapper {
+
+  background-color: $color-background-block-theme;
+  width:43rem;
+
+  padding: 5.2rem 2.8rem;
+  text-align: left;
+  color: $color-white;
+
+  .termContent {
+    &-title {
+
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: 5rem;
+
+      p {
+        font-size: 3rem;
+        line-height: 3.7rem;
+        font-weight: bold;
+        margin-bottom: 1.1rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        line-height: 3rem ;
+      }
+
+
+    }
+
+    &-content {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      a {
+        margin-bottom: 1.8rem;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+      }
+
+      .active {
+        font-weight: bold;
+        padding-left: 1rem;
+      }
+    }
+  }
+}

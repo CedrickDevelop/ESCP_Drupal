@@ -1,0 +1,19 @@
+uuid: 583455ed-83e9-4a20-93dc-f430d57f0847
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icon
+    - taxonomy.vocabulary.social_network
+id: taxonomy_term.social_network.field_icon
+field_name: field_icon
+entity_type: taxonomy_term
+bundle: social_network
+label: Icone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

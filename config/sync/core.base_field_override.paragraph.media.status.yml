@@ -1,0 +1,22 @@
+uuid: 8fe73c8b-c65c-4d38-b1d5-f9b4ce6814a5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.media
+id: paragraph.media.status
+field_name: status
+entity_type: paragraph
+bundle: media
+label: Publié
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

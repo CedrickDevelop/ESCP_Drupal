@@ -1,0 +1,10 @@
+uuid: 428799f5-97ee-4c90-954c-b4882b912c1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.teaser_article_page
+label: 'Teaser article page'
+targetEntityType: media
+cache: true

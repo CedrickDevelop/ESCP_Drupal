@@ -1,0 +1,32 @@
+uuid: 468278dc-141a-4f85-be1b-2b40fca35269
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.suggestions.field_articles
+    - field.field.paragraph.suggestions.field_title
+    - paragraphs.paragraphs_type.suggestions
+id: paragraph.suggestions.default
+targetEntityType: paragraph
+bundle: suggestions
+mode: default
+content:
+  field_articles:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser_suggest_paragraph
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

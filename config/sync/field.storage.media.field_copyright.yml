@@ -1,0 +1,21 @@
+uuid: 1ef2ce71-57a4-4b42-9181-de8530ed6472
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_copyright
+field_name: field_copyright
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

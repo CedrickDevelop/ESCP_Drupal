@@ -1,0 +1,21 @@
+uuid: 0e31712d-4112-4197-8d2f-6c966193f9fa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.wysiwyg
+  module:
+    - text
+id: paragraph.wysiwyg.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: wysiwyg
+label: 'Corps de texte'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

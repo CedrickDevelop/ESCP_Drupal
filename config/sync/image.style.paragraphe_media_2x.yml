@@ -1,0 +1,15 @@
+uuid: 67e3d269-a1bb-4c1c-84f4-05efd28743c4
+langcode: fr
+status: true
+dependencies: {  }
+name: paragraphe_media_2x
+label: 'Paragraphe média(2692w)'
+effects:
+  8c679e52-a273-4418-a94f-1239d545f7b8:
+    uuid: 8c679e52-a273-4418-a94f-1239d545f7b8
+    id: image_scale
+    weight: 1
+    data:
+      width: 2692
+      height: null
+      upscale: false

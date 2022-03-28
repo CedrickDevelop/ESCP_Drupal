@@ -1,0 +1,14 @@
+services:
+  #Gateway for article
+  Drupal\cp22_escp_article_list\Gateway\ArticleListNodeGateway:
+    class: Drupal\cp22_escp_article_list\Gateway\ArticleListNodeGateway
+    arguments: ['@entity_type.manager', '@adimeo_tools.language']
+
+  #Manager for article
+  Drupal\cp22_escp_article_list\Manager\ArticleListNodeManager:
+    class: Drupal\cp22_escp_article_list\Manager\ArticleListNodeManager
+    arguments: ['@entity_type.manager',
+                '@Drupal\cp22_escp_article_list\Gateway\ArticleListNodeGateway',
+                '@cache.data']
+
+

@@ -1,0 +1,10 @@
+uuid: 70ca3371-e848-463c-b462-0cafc98af109
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.icon_socials
+label: 'Icone réseaux sociaux '
+targetEntityType: media
+cache: true

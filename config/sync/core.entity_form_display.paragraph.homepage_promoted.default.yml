@@ -1,0 +1,46 @@
+uuid: 4876161e-254c-48a4-99de-dd5722b5d6c0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_promoted.field_image
+    - field.field.paragraph.homepage_promoted.field_link
+    - field.field.paragraph.homepage_promoted.field_title_formatted
+    - paragraphs.paragraphs_type.homepage_promoted
+  module:
+    - link
+    - text
+id: paragraph.homepage_promoted.default
+targetEntityType: paragraph
+bundle: homepage_promoted
+mode: default
+content:
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title_formatted:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

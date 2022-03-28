@@ -1,0 +1,19 @@
+services:
+  #Gateway for author
+  Drupal\cp22_escp_author\Gateway\AuthorNodeGateway:
+    class: Drupal\cp22_escp_author\Gateway\AuthorNodeGateway
+    arguments: [ '@entity_type.manager',
+                 '@adimeo_tools.language' ]
+
+  #Manager for author
+  Drupal\cp22_escp_author\Manager\AuthorNodeManager:
+    class: Drupal\cp22_escp_author\Manager\AuthorNodeManager
+    arguments: ['@Drupal\cp22_escp_article\Manager\ArticleNodeManager',
+                '@current_route_match',
+                '@Drupal\cp22_escp_author\Gateway\AuthorNodeGateway',
+                '@entity_type.manager',
+                '@cache.data']
+
+
+
+

@@ -1,0 +1,10 @@
+uuid: ad536958-3e3a-4676-bbd9-3a2d641925a9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.suggest_paragraph
+label: 'Paragraphe suggestions'
+targetEntityType: media
+cache: true

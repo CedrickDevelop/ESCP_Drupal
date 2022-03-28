@@ -1,0 +1,35 @@
+{# For default pages, diplay node in this container in order to apply CSS on it. #}
+
+{{ content }}
+
+<article class="TermWrapper TaxonomyTerm">
+
+  <div class="TaxonomyTerm-headerWrapper TermHeader">
+    <h2 class="TermHeader-title">
+      {{ node.label }}
+    </h2>
+
+    <h3 class="TermHeader-chapo">
+      {{ content.field_chapo }}
+    </h3>
+
+    <div class="TermHeader-filter">
+      <span>Creer le filtrage spec p.36</span>
+    </div>
+
+  </div>
+
+  <div class="TermHeader-ContentWrapper ContentArticle">
+
+    <p>Creation d'une boucle foreach avec un maximum de 10 éléménets à afficher</p>
+
+    <div class="ContentArticle">
+      <p>insertion des articles dans leur view mode TeaserlistArticle</p>
+      <p>Affichage en fonction du filtre selectionné p.36 des specs</p>
+      <p>Ajouter un pager et 10 éléments par page</p>
+    </div>
+  </div>
+
+</article>
+
+

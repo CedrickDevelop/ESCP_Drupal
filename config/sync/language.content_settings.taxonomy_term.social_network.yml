@@ -1,0 +1,18 @@
+uuid: 44bd8e0d-e5bf-46de-a99d-a3ed9c32a6c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_network
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.social_network
+target_entity_type_id: taxonomy_term
+target_bundle: social_network
+default_langcode: site_default
+language_alterable: false

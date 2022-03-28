@@ -1,0 +1,21 @@
+uuid: 8381aac3-8c93-49b7-b95f-3a4d02e5ecdb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_formatted
+    - paragraphs.paragraphs_type.homepage_promoted
+  module:
+    - text
+id: paragraph.homepage_promoted.field_title_formatted
+field_name: field_title_formatted
+entity_type: paragraph
+bundle: homepage_promoted
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

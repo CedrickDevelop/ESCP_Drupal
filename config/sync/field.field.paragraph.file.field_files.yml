@@ -1,0 +1,27 @@
+uuid: 64cc9051-c74e-4cab-a084-ec401bc09042
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_files
+    - paragraphs.paragraphs_type.file
+  module:
+    - file
+id: paragraph.file.field_files
+field_name: field_files
+entity_type: paragraph
+bundle: file
+label: Fichiers
+description: 'Ajouter les liens de fichiers téléchargeables dont les extensions peuvent être : txt, rtf, doc, docx, ppt, pptx, xls, xlsx, pdf, odf, odg, odp, ods, odt, fodt, fods, fodp, fodg, key, numbers, pages'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: media/document
+  file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages'
+  max_filesize: ''
+  description_field: true
+field_type: file

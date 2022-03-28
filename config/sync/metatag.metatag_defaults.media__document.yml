@@ -1,0 +1,20 @@
+uuid: 8d7278a1-bafb-4d58-90d7-543d77930693
+langcode: fr
+status: true
+dependencies: {  }
+id: media__document
+label: 'Média: Document'
+tags:
+  content_language: '[media:field_media_document:entity:language]'
+  description: " \t[media:field_media_document:entity:basename] \t"
+  abstract: " \t[media:field_media_document:entity:basename] "
+  title: " \t[media:field_media_document:entity:basename] \t"
+  og_site_name: '[site:name]'
+  og_title: '[media:field_media_document:entity:basename]'
+  article_author: " \t[media:field_media_document:entity:owner]"
+  article_publisher: " \t[media:field_media_document:entity:owner]"
+  og_type: '[media:field_media_document:entity:mime]'
+  og_url: ' [media:field_media_document:entity:url]'
+  og_description: '[media:field_media_document:entity:basename]'
+  twitter_cards_title: '[media:field_media_document:entity:name]'
+  twitter_cards_page_url: ' [media:field_media_document:entity:url]'

@@ -1,0 +1,69 @@
+uuid: 1056f29c-4898-48fd-8c97-9f8c53cc869d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: media/images
+    extensions: 'txt pdf doc docx odt ppt pptx csv xls xlsx'
+    max_size: ''
+_core:
+  default_config_hash: GpxvYjhGr00_uT2lPykyL-q-UMkZy10PX5ROoGX2U3M
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - '-'
+        -
+          name: Linking
+          items:
+            - DrupalUnlink
+            - DrupalLink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Style
+          items:
+            - '-'
+            - Styles
+        -
+          name: Tools
+          items:
+            - '-'
+            - Undo
+            - Redo
+            - Source
+        -
+          name: Media
+          items:
+            - Format
+  plugins:
+    stylescombo:
+      styles: "button.classic|bouton\r\na.external-link|Lien externe\r\na.internal-link|Lien interne"
+    language:
+      language_list: un
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

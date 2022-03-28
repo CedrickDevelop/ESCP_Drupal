@@ -1,0 +1,15 @@
+services:
+  #Gateway for article
+  Drupal\cp22_escp_article\Gateway\ArticleNodeGateway:
+    class: Drupal\cp22_escp_article\Gateway\ArticleNodeGateway
+    arguments: ['@entity_type.manager', '@adimeo_tools.language']
+
+  #Manager for article
+  Drupal\cp22_escp_article\Manager\ArticleNodeManager:
+    class: Drupal\cp22_escp_article\Manager\ArticleNodeManager
+    arguments: ['@entity_type.manager',
+                '@Drupal\cp22_escp_article\Gateway\ArticleNodeGateway',
+                '@current_route_match',
+                '@Drupal\cp22_escp_themes\Manager\ThemesTermManager',
+                '@cache.data']
+

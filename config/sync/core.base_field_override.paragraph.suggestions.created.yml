@@ -1,0 +1,18 @@
+uuid: 88bb272d-2d32-40aa-b1ad-4772fc06089e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.suggestions
+id: paragraph.suggestions.created
+field_name: created
+entity_type: paragraph
+bundle: suggestions
+label: 'Écrit le'
+description: 'Heure de création du paragraphe.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

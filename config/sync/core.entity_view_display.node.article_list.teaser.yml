@@ -1,0 +1,24 @@
+uuid: fa944c18-c24d-4dce-9a12-c6e623c968a8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article_list.field_chapo_long
+    - node.type.article_list
+  module:
+    - user
+id: node.article_list.teaser
+targetEntityType: node
+bundle: article_list
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_chapo_long: true
+  langcode: true
+  search_api_excerpt: true

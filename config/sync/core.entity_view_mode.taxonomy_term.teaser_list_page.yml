@@ -1,0 +1,10 @@
+uuid: 86b4c020-b5ed-4d9b-b8af-56d99a02db90
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.teaser_list_page
+label: 'Accroche pages de listes'
+targetEntityType: taxonomy_term
+cache: true

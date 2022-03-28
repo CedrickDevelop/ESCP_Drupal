@@ -1,0 +1,44 @@
+<?php
+
+use Drupal\cp22_escp_article_list\Manager\ArticleListNodeManager;
+
+/**
+ * Implements hook_help().
+ */
+function cp22_escp_global_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dillon module.
+    case 'help.page.cp22_escp_global':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+    default:
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function cp22_escp_global_preprocess_node(&$variables)
+{
+  // ************ This elements will apply everywhere on all pages ******************
+
+  // Get the newsletter Form
+  $variables['newsletter_form'] = \Drupal::formBuilder()->getForm('Drupal\cp22_escp_global\Form\NewsLetterForm');
+  $variables['formNewsLetterMail'] = \Drupal::requestStack()->getCurrentRequest()->get('newsletter_form_email');
+}
+
+/**
+ * Use language code for the language switcher
+ */
+function cp22_escp_global_preprocess_links__language_block(&$variables) {
+  foreach ($variables['links'] as $i => $link) {
+    // @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage
+    $linkLanguage = $link['link']['#options']['language'];
+    $variables['links'][$i]['link']['#title'] = $linkLanguage->get('id');
+  }
+}
+
+
+

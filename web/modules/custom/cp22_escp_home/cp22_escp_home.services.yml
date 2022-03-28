@@ -1,0 +1,21 @@
+services:
+
+  #HomeManager
+  cp22_escp_home.home_manager:
+    class: Drupal\cp22_escp_home\Manager\HomeManager
+    arguments: ['@entity_type.manager',
+                '@adimeo_tools.language',
+                '@cp22_escp_home.home_gateway',
+                '@Drupal\cp22_escp_article\Manager\ArticleNodeManager',
+                '@Drupal\cp22_escp_author\Manager\AuthorNodeManager',
+                '@cache.data']
+
+  #HomeGateway
+  cp22_escp_home.home_gateway:
+    class: Drupal\cp22_escp_home\Gateway\HomeGateway
+    arguments: ['@entity_type.manager','@adimeo_tools.language']
+
+  #FrontPageController
+  cp22_escp_home.home_controller:
+    class: Drupal\cp22_escp_home\Controller\FrontPageController
+    arguments: ['@cp22_escp_home.home_manager']

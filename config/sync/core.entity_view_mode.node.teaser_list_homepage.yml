@@ -1,0 +1,10 @@
+uuid: 27bfaa53-5aa2-47ad-b1e9-64b9fae471e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_list_homepage
+label: 'Accroche liste de la page d''accueil'
+targetEntityType: node
+cache: true

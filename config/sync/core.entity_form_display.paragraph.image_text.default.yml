@@ -1,0 +1,128 @@
+uuid: 08614d78-bee8-41bd-8303-96a83c0235c7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text.field_button_link
+    - field.field.paragraph.image_text.field_formatted_text
+    - field.field.paragraph.image_text.field_image
+    - field.field.paragraph.image_text.field_image_position
+    - field.field.paragraph.image_text.field_subtitle
+    - field.field.paragraph.image_text.field_title
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - field_group
+    - link
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_global:
+      children:
+        - group_presentation
+        - group_text_content
+      label: Global
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_presentation:
+      children:
+        - field_title
+        - field_image
+        - field_image_position
+      label: Présentation
+      region: content
+      parent_name: group_global
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_text_content:
+      children:
+        - field_subtitle
+        - field_formatted_text
+        - field_button_link
+        - status
+      label: 'Contenu texte'
+      region: content
+      parent_name: group_global
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: paragraph.image_text.default
+targetEntityType: paragraph
+bundle: image_text
+mode: default
+content:
+  field_button_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_formatted_text:
+    type: text_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_image_position:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

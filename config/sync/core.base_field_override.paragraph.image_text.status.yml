@@ -1,0 +1,22 @@
+uuid: c6e6da61-a2c2-4819-95ce-7740f417b8d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.image_text
+id: paragraph.image_text.status
+field_name: status
+entity_type: paragraph
+bundle: image_text
+label: Publié
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

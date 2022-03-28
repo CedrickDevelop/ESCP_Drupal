@@ -1,0 +1,31 @@
+#### les articles
+cp22_escp_article.content:
+  title: "Les articles"
+  parent: contrib
+  menu_name: contrib
+  url: internal:/admin/content
+  options:
+    query:
+      type[0]: 'article'
+  weight: 3
+
+#### les articles
+cp22_escp_article.content.show:
+  title: "Voir les articles"
+  parent: cp22_escp_article.content
+  menu_name: contrib
+  url: internal:/admin/content
+  options:
+    query:
+      type[0]: 'article'
+  weight: 0
+
+
+  #### les articles
+cp22_escp_article.content.add:
+  title: "Ajouter un article"
+  parent: cp22_escp_article.content
+  menu_name: contrib
+  url: internal:/node/add/article
+  weight: 1
+

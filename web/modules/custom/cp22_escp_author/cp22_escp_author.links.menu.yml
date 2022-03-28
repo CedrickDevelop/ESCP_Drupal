@@ -1,0 +1,31 @@
+#### les auteurs
+cp22_escp_author.authors:
+  title: "Les auteurs"
+  parent: contrib
+  menu_name: contrib
+  url: internal:/admin/content
+  options:
+    query:
+      type[0]: 'author'
+  weight: 2
+
+####
+cp22_escp_author.authors.show:
+  title: "Voir les auteurs"
+  parent: cp22_escp_author.authors
+  menu_name: contrib
+  url: internal:/admin/content
+  options:
+    query:
+      type[0]: 'author'
+  weight: 0
+
+####
+cp22_escp_author.authors.add:
+  title: "Ajouter un auteur"
+  parent: cp22_escp_author.authors
+  menu_name: contrib
+  url: internal:/node/add/author
+  weight: 1
+
+

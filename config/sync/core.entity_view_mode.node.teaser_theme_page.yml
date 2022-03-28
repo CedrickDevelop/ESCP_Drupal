@@ -1,0 +1,10 @@
+uuid: 3c41f63f-ed5e-4731-8ec6-ffecd4c99cac
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_theme_page
+label: 'Accroche page d''une thématique'
+targetEntityType: node
+cache: true

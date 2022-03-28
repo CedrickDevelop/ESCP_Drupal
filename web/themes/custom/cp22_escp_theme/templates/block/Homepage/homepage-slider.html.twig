@@ -1,0 +1,14 @@
+
+{{ dd(slider_homepage) }}
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    {% for article in slider_homepage|at_children %}
+
+    <div class="swiper-slide">
+      {{ article }}
+    </div>
+
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,138 @@
+uuid: 465e8cf0-2c3f-4ef5-8be0-2f733aed002c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.media.remote_video.field_copyright
+    - field.field.media.remote_video.field_image
+    - field.field.media.remote_video.field_media_oembed_video
+    - image.style.thumbnail
+    - media.type.remote_video
+  module:
+    - field_group
+    - image
+    - media
+third_party_settings:
+  field_group:
+    group_global:
+      children:
+        - group_presentation
+        - group_add_on
+      label: Global
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_presentation:
+      children:
+        - name
+        - field_media_oembed_video
+        - field_image
+        - field_copyright
+      label: Présentation
+      region: content
+      parent_name: group_global
+      weight: 8
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_add_on:
+      children:
+        - status
+        - langcode
+        - uid
+        - created
+      label: 'Informations additionnelles'
+      region: content
+      parent_name: group_global
+      weight: 9
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: RPTQ9cmAUht9lyedx6Q2AMuTuVZG05AMHMXlSQABKO8
+id: media.remote_video.default
+targetEntityType: media
+bundle: remote_video
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_copyright:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 12
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_media_oembed_video:
+    type: oembed_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 7
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  path: true

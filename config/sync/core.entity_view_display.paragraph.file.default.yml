@@ -1,0 +1,33 @@
+uuid: eff48e96-f9be-4a90-b7dd-84c1bb982596
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.file.field_files
+    - field.field.paragraph.file.field_title
+    - paragraphs.paragraphs_type.file
+  module:
+    - file
+id: paragraph.file.default
+targetEntityType: paragraph
+bundle: file
+mode: default
+content:
+  field_files:
+    type: file_table
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: 55d315ff-edcd-4adb-8fc6-301966562471
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.article_list
+id: node.article_list.created
+field_name: created
+entity_type: node
+bundle: article_list
+label: 'Écrit le'
+description: 'L''heure à laquelle le nœud a été créé.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

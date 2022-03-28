@@ -1,0 +1,41 @@
+uuid: 42382871-9261-4905-8705-281b8adf5cdb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_list_page
+    - field.field.node.author.field_biography
+    - field.field.node.author.field_visual
+    - node.type.author
+  module:
+    - text
+    - user
+id: node.author.teaser_list_page
+targetEntityType: node
+bundle: author
+mode: teaser_list_page
+content:
+  field_biography:
+    type: text_trimmed
+    label: visually_hidden
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_visual:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

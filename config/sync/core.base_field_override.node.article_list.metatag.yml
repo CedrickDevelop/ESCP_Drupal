@@ -1,0 +1,18 @@
+uuid: df53c543-7095-4a40-af17-27e3e23c0632
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.article_list
+id: node.article_list.metatag
+field_name: metatag
+entity_type: node
+bundle: article_list
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Les balises méta de l''entité.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

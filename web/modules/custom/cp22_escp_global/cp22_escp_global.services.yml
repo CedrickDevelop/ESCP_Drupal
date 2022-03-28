@@ -1,0 +1,20 @@
+services:
+  #Breadcrumb
+  cp22_escp_global.custom_breadcrumb:
+    class: Drupal\cp22_escp_global\Service\BaseBreadcrumb
+    tags:
+      - { name: breadcrumb_builder, priority: 1010 }
+    arguments: ['@router.admin_context', '@title_resolver']
+
+  #Gateway
+  Drupal\cp22_escp_global\Gateway\BasicListOfTaxonomyTermsGateway:
+    class: Drupal\cp22_escp_global\Gateway\BasicListOfTaxonomyTermsGateway
+    arguments: ['@entity_type.manager']
+
+  #Manager
+  Drupal\cp22_escp_global\Manager\BasicListOfTaxonomyTermsManager:
+    class: Drupal\cp22_escp_global\Manager\BasicListOfTaxonomyTermsManager
+    arguments: ['@entity_type.manager',
+                '@Drupal\cp22_escp_global\Gateway\BasicListOfTaxonomyTermsGateway']
+
+

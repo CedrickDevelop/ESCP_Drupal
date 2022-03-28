@@ -1,0 +1,20 @@
+uuid: e01a4cb6-ab92-4f81-a5e2-2b2f0ca070e6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - cp22_escp_global
+  theme:
+    - cp22_escp_theme
+id: headertitleblock
+theme: cp22_escp_theme
+region: header
+weight: 0
+provider: null
+plugin: cp22_escp_global_header_title
+settings:
+  id: cp22_escp_global_header_title
+  label: 'Block titre du site'
+  label_display: '0'
+  provider: cp22_escp_global
+visibility: {  }

@@ -1,0 +1,10 @@
+services:
+  Drupal\cp22_escp_themes\Manager\ThemesTermManager:
+    class: Drupal\cp22_escp_themes\Manager\ThemesTermManager
+    arguments: ['@entity_type.manager',
+                '@Drupal\cp22_escp_global\Gateway\BasicListOfTaxonomyTermsGateway']
+
+  Drupal\cp22_escp_themes\Manager\ThemesTermManagerForBlock:
+    class: Drupal\cp22_escp_themes\Manager\ThemesTermManagerForBlock
+    arguments: ['@Drupal\cp22_escp_themes\Manager\ThemesTermManager',
+                '@current_route_match']

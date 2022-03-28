@@ -1,0 +1,31 @@
+uuid: 7a062dd5-6c62-4398-b182-97b851faef6d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.themes.field_chapo
+    - taxonomy.vocabulary.themes
+  module:
+    - text
+id: taxonomy_term.themes.default
+targetEntityType: taxonomy_term
+bundle: themes
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_chapo:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

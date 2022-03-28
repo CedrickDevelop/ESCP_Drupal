@@ -1,0 +1,19 @@
+uuid: 200f6393-a2b1-4bec-b6c5-2de26e70f34b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_copyright
+    - media.type.remote_video
+id: media.remote_video.field_copyright
+field_name: field_copyright
+entity_type: media
+bundle: remote_video
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

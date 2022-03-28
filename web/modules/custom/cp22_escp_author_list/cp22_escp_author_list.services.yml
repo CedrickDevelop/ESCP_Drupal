@@ -1,0 +1,6 @@
+services:
+  #Controller for author list
+  Drupal\cp22_escp_author_list\Controller\NodesAuthorListPageController:
+    class: Drupal\cp22_escp_author_list\Controller\NodesAuthorListPageController
+    arguments: ['@Drupal\cp22_escp_author\Manager\AuthorNodeManager']
+

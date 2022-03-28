@@ -1,0 +1,98 @@
+uuid: b08d1809-075b-4c9f-8243-ae15067be46d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_copyright
+    - field.field.media.image.field_media_image
+    - image.style.thumbnail
+    - media.type.image
+  module:
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_global:
+      children: {  }
+      label: Global
+      region: hidden
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_presentation:
+      children: {  }
+      label: Présentation
+      region: hidden
+      parent_name: ''
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_add_on:
+      children: {  }
+      label: 'Informations additionnelles'
+      region: hidden
+      parent_name: ''
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: 4ImIE0hix6MIIHSx0FUrznx8MYQRelF9vJySn14ZtgU
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_copyright:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  uid: true

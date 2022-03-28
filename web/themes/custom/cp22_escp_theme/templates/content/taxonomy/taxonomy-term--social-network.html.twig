@@ -1,0 +1,10 @@
+{# For default pages, diplay node in this container in order to apply CSS on it. #}
+
+<div class="TermSocials" style="width:50px; height:50px;">
+
+  <a href="{{ term.field_url.uri }}" title="{{ "Follow us on"|t }} {{ term.label }}" target=_blank>
+    {{ source(term.field_icon.value) }}
+  </a>
+
+</div>
+

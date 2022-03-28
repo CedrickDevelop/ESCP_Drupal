@@ -1,0 +1,7 @@
+cp22_escp_author_list.page:
+  path: '/authors'
+  defaults:
+    _controller: Drupal\cp22_escp_author_list\Controller\NodesAuthorListPageController:content
+    _title: 'All the authors'
+  requirements:
+    _permission: 'access content'

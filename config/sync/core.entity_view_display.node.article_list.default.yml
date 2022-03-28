@@ -1,0 +1,30 @@
+uuid: ebd7a2d8-faa8-4e83-9224-e5991f7ecd39
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.article_list.field_chapo_long
+    - node.type.article_list
+  module:
+    - text
+    - user
+id: node.article_list.default
+targetEntityType: node
+bundle: article_list
+mode: default
+content:
+  field_chapo_long:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

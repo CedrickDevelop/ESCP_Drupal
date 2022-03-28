@@ -1,0 +1,15 @@
+uuid: 242cc624-9dc7-49e1-978f-afc4aa0802cc
+langcode: fr
+status: true
+dependencies: {  }
+name: icon_socials
+label: 'Icone réseaux sociaux (45 x 45)'
+effects:
+  255e0e79-6b02-41d6-8b79-b29c1b9678d9:
+    uuid: 255e0e79-6b02-41d6-8b79-b29c1b9678d9
+    id: image_crop
+    weight: 1
+    data:
+      width: 45
+      height: 45
+      anchor: center-center

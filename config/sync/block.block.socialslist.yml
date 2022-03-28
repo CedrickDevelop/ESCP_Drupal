@@ -1,0 +1,20 @@
+uuid: 18f730b9-b6ee-4695-8b4e-f5985caf4346
+langcode: fr
+status: true
+dependencies:
+  module:
+    - cp22_escp_socials
+  theme:
+    - cp22_escp_theme
+id: socialslist
+theme: cp22_escp_theme
+region: footer
+weight: -2
+provider: null
+plugin: cp22_escp_socials_socialsList
+settings:
+  id: cp22_escp_socials_socialsList
+  label: SocialsList
+  label_display: visible
+  provider: cp22_escp_socials
+visibility: {  }

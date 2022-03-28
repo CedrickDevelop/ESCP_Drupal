@@ -1,0 +1,111 @@
+uuid: 304df581-b654-4790-b4e3-da9effe776e2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.themes.field_chapo
+    - taxonomy.vocabulary.themes
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_global:
+      children:
+        - group_presentation
+        - group_add_on
+      label: Global
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_presentation:
+      children:
+        - name
+        - field_chapo
+      label: Présentation
+      region: content
+      parent_name: group_global
+      weight: 8
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_add_on:
+      children:
+        - status
+        - langcode
+        - translation
+        - description
+      label: 'Informations additionnelles'
+      region: content
+      parent_name: group_global
+      weight: 9
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: taxonomy_term.themes.default
+targetEntityType: taxonomy_term
+bundle: themes
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_chapo:
+    type: text_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 180
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 6
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  path: true

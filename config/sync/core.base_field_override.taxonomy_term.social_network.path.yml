@@ -1,0 +1,20 @@
+uuid: 5c864bf0-a928-4459-8457-aea7f7505425
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_network
+  module:
+    - path
+id: taxonomy_term.social_network.path
+field_name: path
+entity_type: taxonomy_term
+bundle: social_network
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

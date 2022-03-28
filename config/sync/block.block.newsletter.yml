@@ -1,0 +1,20 @@
+uuid: 80cbac02-b6ed-413a-acd3-27371ce1e885
+langcode: en
+status: true
+dependencies:
+  module:
+    - cp22_escp_global
+  theme:
+    - cp22_escp_theme
+id: newsletter
+theme: cp22_escp_theme
+region: footer
+weight: -3
+provider: null
+plugin: cp22_escp_global_newsLetter
+settings:
+  id: cp22_escp_global_newsLetter
+  label: NewsLetter
+  label_display: '0'
+  provider: cp22_escp_global
+visibility: {  }

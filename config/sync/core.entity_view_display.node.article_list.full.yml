@@ -1,0 +1,31 @@
+uuid: 927897cf-8283-4dfb-855f-1c38fd9718f0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.article_list.field_chapo_long
+    - node.type.article_list
+  module:
+    - text
+    - user
+id: node.article_list.full
+targetEntityType: node
+bundle: article_list
+mode: full
+content:
+  field_chapo_long:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

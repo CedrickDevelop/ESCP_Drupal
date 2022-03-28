@@ -1,0 +1,20 @@
+uuid: 335d6ca2-041f-4098-828a-368eee435b8e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - cp22_escp_themes
+  theme:
+    - cp22_escp_theme
+id: themes_term_block
+theme: cp22_escp_theme
+region: aside
+weight: 0
+provider: null
+plugin: cp22_escp_themes_term_block
+settings:
+  id: cp22_escp_themes_term_block
+  label: Thématiques
+  label_display: visible
+  provider: cp22_escp_themes
+visibility: {  }

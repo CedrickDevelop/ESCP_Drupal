@@ -1,0 +1,56 @@
+uuid: 18f201dc-f5f9-4046-8f8a-3d736ba7a502
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bounce_content
+    - node.type.article
+    - paragraphs.paragraphs_type.file
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.suggestions
+  module:
+    - entity_reference_revisions
+id: node.article.field_bounce_content
+field_name: field_bounce_content
+entity_type: node
+bundle: article
+label: 'Contenu de rebond'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      file: file
+      link: link
+      suggestions: suggestions
+    negate: 0
+    target_bundles_drag_drop:
+      file:
+        weight: 9
+        enabled: true
+      homepage_promoted:
+        weight: 10
+        enabled: false
+      image_text:
+        weight: 11
+        enabled: false
+      link:
+        weight: 12
+        enabled: true
+      media:
+        weight: 13
+        enabled: false
+      promotion:
+        weight: 14
+        enabled: false
+      suggestions:
+        weight: 15
+        enabled: true
+      wysiwyg:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

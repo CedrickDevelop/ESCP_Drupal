@@ -1,0 +1,10 @@
+uuid: f6cdb6c8-2027-4012-bce7-e55cc4052944
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.teaser_article
+label: 'Accroche page d''un article'
+targetEntityType: paragraph
+cache: true

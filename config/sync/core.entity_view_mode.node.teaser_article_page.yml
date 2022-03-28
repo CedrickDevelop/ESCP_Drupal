@@ -1,0 +1,10 @@
+uuid: 69db4912-9340-4a15-b74e-b5cdfddb90dc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_article_page
+label: 'Accroche page d''un article'
+targetEntityType: node
+cache: true

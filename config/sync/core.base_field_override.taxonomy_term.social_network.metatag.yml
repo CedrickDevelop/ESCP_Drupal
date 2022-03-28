@@ -1,0 +1,18 @@
+uuid: 9c291104-0341-470a-89ec-01e97b79334a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_network
+id: taxonomy_term.social_network.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: social_network
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Les balises méta de l''entité.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

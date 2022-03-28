@@ -1,0 +1,47 @@
+uuid: 3d895475-6f6f-4d92-b7f7-12f814d011ff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promotion.field_article
+    - field.field.paragraph.promotion.field_image_position
+    - field.field.paragraph.promotion.field_link
+    - paragraphs.paragraphs_type.promotion
+  module:
+    - link
+    - options
+id: paragraph.promotion.default
+targetEntityType: paragraph
+bundle: promotion
+mode: default
+content:
+  field_article:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_position:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

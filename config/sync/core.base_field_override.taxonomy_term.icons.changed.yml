@@ -1,0 +1,18 @@
+uuid: bd1b8381-e9b1-4b31-8aca-d7f3ffec0463
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+id: taxonomy_term.icons.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: icons
+label: Modifié
+description: 'Le moment auquel le terme a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

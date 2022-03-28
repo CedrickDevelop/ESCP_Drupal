@@ -1,0 +1,74 @@
+uuid: b8c2e777-806a-4b9b-bd9b-a1e135e5180a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text.field_button_link
+    - field.field.paragraph.image_text.field_formatted_text
+    - field.field.paragraph.image_text.field_image
+    - field.field.paragraph.image_text.field_image_position
+    - field.field.paragraph.image_text.field_subtitle
+    - field.field.paragraph.image_text.field_title
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - link
+    - options
+    - text
+id: paragraph.image_text.default
+targetEntityType: paragraph
+bundle: image_text
+mode: default
+content:
+  field_button_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_formatted_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image_position:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

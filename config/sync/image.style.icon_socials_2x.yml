@@ -1,0 +1,15 @@
+uuid: ec93f053-1220-4c1e-8bca-171624959ed7
+langcode: fr
+status: true
+dependencies: {  }
+name: icon_socials_2x
+label: 'Icone réseaux sociaux (90 x 90)'
+effects:
+  5ee19ee0-18f4-4062-9e78-ab214cc03406:
+    uuid: 5ee19ee0-18f4-4062-9e78-ab214cc03406
+    id: image_crop
+    weight: 1
+    data:
+      width: 90
+      height: 90
+      anchor: center-center

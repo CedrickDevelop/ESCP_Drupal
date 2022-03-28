@@ -1,0 +1,20 @@
+<?php
+
+
+/**
+ *   Register a module or theme's theme implementations.
+ *   see the documentation for hook_theme
+ *  @param array $existing
+ *  @param $type
+ *  @param $theme
+ *  @param $path
+ *
+ *  @return array
+ */
+function cp22_saulnier_socials_theme(array $existing, $type, $theme, $path): array {
+  return [
+    'socials_slider' => [
+      'variables' => ['social_network' => NULL ]
+    ],
+  ];
+}

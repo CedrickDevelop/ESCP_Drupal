@@ -1,0 +1,18 @@
+uuid: 8ed3a092-c850-4d54-bbd3-08b84946e505
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.themes
+id: taxonomy_term.themes.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: themes
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Les balises méta de l''entité.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

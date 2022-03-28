@@ -1,0 +1,15 @@
+uuid: 7807eb6f-05c3-4643-aae4-930a6d111cb4
+langcode: fr
+status: true
+dependencies: {  }
+name: teaser_article_list_page
+label: 'Teaser Article Page de liste (490 x 300)'
+effects:
+  5fc2adcf-0591-4774-851e-9aea37530916:
+    uuid: 5fc2adcf-0591-4774-851e-9aea37530916
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 490
+      height: 300
+      anchor: center-center

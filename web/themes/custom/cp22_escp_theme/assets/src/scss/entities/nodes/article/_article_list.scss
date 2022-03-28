@@ -1,0 +1,81 @@
+#MainWrapper {
+  display: flex;
+  justify-content: center;
+
+  background-color: $background-list-page;
+  .MainWrapper-page {
+    .NodeArticleList {
+
+      padding-top: 9.316rem;
+      padding-left: 13.143rem;
+      padding-right: 10.8rem;
+
+      &-headerWrapper {
+
+        height: 25rem;
+
+        .NodeHeader {
+          &-title {
+            //font-family: $font-bigtitle;
+            @extend %_fontMontserratbold;
+            font-size: 6.114rem;
+            text-align: left;
+            line-height: 6.114rem;
+          }
+
+          &-chapo {
+            margin-top: 2rem;
+
+            font-family: $font-body-regular;
+            font-size: 2rem;
+            text-align: left;
+            line-height: 4rem;
+          }
+
+          &-filter {
+            text-align: right;
+            margin-top: 2rem;
+
+            font-family: $font-body-regular;
+
+            label {
+              text-align: right;
+              font-size: 2rem;
+              line-height: 2.4rem;
+
+              text-transform: uppercase;
+              font-weight: bold;
+              color: $color-black-label;
+            }
+
+            select {
+              text-align: left;
+              font-size: 2rem;
+              line-height: 2.4rem;
+
+              border: none;
+              outline: none;
+              background-color: transparent;
+              color: $color-yellow-select;
+
+
+
+            }
+            select:after{
+              content:"\f061";
+              @extend %_fontAwesomeBase;
+              font-size: 2rem;
+              line-height: 2.4rem;
+              color: $color-black-label ;
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+
+
+}

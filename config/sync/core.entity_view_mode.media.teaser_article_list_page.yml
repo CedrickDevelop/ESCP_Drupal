@@ -1,0 +1,10 @@
+uuid: c2afb37c-7b66-4428-9eae-008c0a259481
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.teaser_article_list_page
+label: 'Teaser Article Page de liste'
+targetEntityType: media
+cache: true

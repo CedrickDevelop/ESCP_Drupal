@@ -1,0 +1,22 @@
+uuid: ebea4fa6-78cd-4da8-af63-7466f9cd13d4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: themes_taxonomy_path
+label: 'chemin thematique '
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]'
+selection_criteria:
+  58063a75-cb5d-47ff-8a71-c1686eeb92e0:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 58063a75-cb5d-47ff-8a71-c1686eeb92e0
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      themes: themes
+selection_logic: and
+weight: -5
+relationships: {  }

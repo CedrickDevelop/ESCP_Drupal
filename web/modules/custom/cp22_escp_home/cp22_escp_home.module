@@ -1,0 +1,84 @@
+<?php
+
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+use Drupal\cp22_escp_article\Manager\ArticleNodeManager;
+use Drupal\cp22_escp_article_list\Manager\ArticleListNodeManager;
+use Drupal\cp22_escp_author\Manager\AuthorNodeManager;
+use Drupal\cp22_escp_home\Controller\FrontPageController;
+use Drupal\cp22_escp_home\Manager\HomeManager;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\adimeo_tools\Service\LanguageService;
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_metatag_route_entity().
+ *
+ * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
+ *
+ * @return mixed
+ */
+function cp22_escp_home_metatag_route_entity (RouteMatchInterface $route_match) {
+  $routeName = $route_match->getRouteName();
+  if ($routeName == FrontPageController::ROUTE_NAME) {
+    $homeManager = HomeManager::me();
+    $homeId = $homeManager->getFrontPageNodeId();
+    if (!empty($homeId)) {
+      $languageService = LanguageService::me();
+      $homeNode = $languageService->load('node', $homeId);
+      if (!empty($homeNode)) {
+        return $homeNode;
+      }
+    }
+  }
+}
+
+function cp22_escp_home_theme(array $existing, $type, $theme, $path): array {
+  return [
+    'homepage_slider' => [
+      'variables' => ['slider_homepage' => NULL ]
+    ],
+  ];
+}
+
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function cp22_escp_home_preprocess_node(&$variables)
+{
+  /** @var NodeInterface $node */
+  $node = $variables['node'];
+
+  // If we are on the home page
+  if ($node->bundle() == HomeManager::BUNDLE_TYPE && $variables['view_mode'] == "full") {
+    $articleNodeManager = \Drupal::service(ArticleNodeManager::class);
+    $homeManager = \Drupal::service('cp22_escp_home.home_manager');
+    $articleListPageManager = \Drupal::service(ArticleListNodeManager::class);
+
+    // We load promoted Articles
+    $variables['promote_articles'] = $articleNodeManager->get3BuiltPublishedNodesArticlePromotedFrontPageSortDescChanged();
+
+    // Get the list page id
+    $variables['list_page_id']  = $articleListPageManager->getTheLastChangedArticleListPagePublishedId();
+
+    // Get the newsletter Form
+    $variables['newsletter_form'] = \Drupal::formBuilder()->getForm('Drupal\cp22_escp_global\Form\NewsLetterForm');
+    $variables['formNewsLetterMail'] = \Drupal::requestStack()->getCurrentRequest()->get('newsletter_form_email');
+
+    //Get the 8 authors maximum List
+    $variables['authors_list'] = $homeManager->get8LastAuthorWithPublishedArticle();
+
+    // Link for all authors
+    $url = Url::fromRoute('cp22_escp_author_list.page');
+    $link = Link::fromTextAndUrl(t('list of author page'), $url);
+    $list[] = $link;
+    $variables['all_authors'] = [
+      '#theme' => 'item_list',
+      '#items' => $list
+    ];
+
+  }
+}
+

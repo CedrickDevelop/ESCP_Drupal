@@ -1,0 +1,19 @@
+uuid: 0f22b726-c3a7-42f6-8606-0f0c15098ce3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.media
+id: paragraph.media.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: media
+label: Titre
+description: 'Le titre de votre paragraphe média vidéo'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

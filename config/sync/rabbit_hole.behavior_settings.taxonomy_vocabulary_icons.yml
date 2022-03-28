@@ -1,0 +1,14 @@
+uuid: 37f24f0f-4d49-4b0b-9e56-b0e13f06cc29
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+id: taxonomy_vocabulary_icons
+entity_type_id: taxonomy_vocabulary
+entity_id: icons
+action: page_not_found
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

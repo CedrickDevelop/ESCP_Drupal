@@ -1,0 +1,42 @@
+uuid: f7cbe388-d7b3-4d41-bd14-e12375dcc9f3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_article_page
+    - field.field.node.author.field_biography
+    - field.field.node.author.field_visual
+    - node.type.author
+  module:
+    - text
+    - user
+id: node.author.teaser_article_page
+targetEntityType: node
+bundle: author
+mode: teaser_article_page
+content:
+  field_biography:
+    type: text_trimmed
+    label: visually_hidden
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_visual:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

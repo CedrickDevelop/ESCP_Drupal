@@ -1,0 +1,10 @@
+uuid: 3bc5d895-0668-4d3b-9bc4-2cd5d79f1b72
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_homepage
+label: 'Accroche page d''accueil'
+targetEntityType: node
+cache: true

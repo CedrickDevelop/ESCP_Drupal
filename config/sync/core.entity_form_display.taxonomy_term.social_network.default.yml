@@ -1,0 +1,125 @@
+uuid: 297cf416-5ff8-47fb-aa64-db0fd8f7ec3c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.social_network.field_icon
+    - field.field.taxonomy_term.social_network.field_url
+    - taxonomy.vocabulary.social_network
+  module:
+    - field_group
+    - icon_selector
+    - text
+third_party_settings:
+  field_group:
+    group_global:
+      children:
+        - group_presentation
+        - group_add_on
+      label: Global
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_presentation:
+      children:
+        - name
+        - field_icon
+        - field_url
+        - description
+      label: Présentation
+      region: content
+      parent_name: group_global
+      weight: 9
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_add_on:
+      children:
+        - langcode
+        - translation
+        - status
+      label: 'Informations additionnelles'
+      region: content
+      parent_name: group_global
+      weight: 11
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: taxonomy_term.social_network.default
+targetEntityType: taxonomy_term
+bundle: social_network
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 13
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon:
+    type: icon_selector_widget
+    weight: 11
+    region: content
+    settings:
+      dir: icon-social
+      value_pattern: path
+      open: 0
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_url:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  path: true

@@ -1,0 +1,17 @@
+uuid: 52707749-567a-4f21-b1df-34ba2114ea63
+langcode: fr
+status: true
+dependencies: {  }
+id: media__image
+label: 'Média: Image'
+tags:
+  description: ' [media:field_media_image:title]'
+  abstract: '[media:field_media_image:alt]'
+  title: ' [media:field_media_image:title]'
+  og_image_type: '[media:field_media_image:entity:extension]'
+  og_image_alt: '[media:field_media_image:alt]'
+  og_site_name: '[site:name]'
+  og_image_url: " \t[media:field_media_image:entity:url]"
+  og_title: '[media:field_media_image:title]'
+  og_type: ' [media:bundle]'
+  og_url: '[url:path]'

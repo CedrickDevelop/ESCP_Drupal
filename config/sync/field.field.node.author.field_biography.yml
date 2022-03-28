@@ -1,0 +1,23 @@
+uuid: e72cdcfa-377c-4b9a-8d68-503d038ca1f1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biography
+    - node.type.author
+  module:
+    - text
+id: node.author.field_biography
+field_name: field_biography
+entity_type: node
+bundle: author
+label: Biographie
+description: 'Vous devez remplir le résumé en plus de la biographie de cet auteur'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+field_type: text_with_summary

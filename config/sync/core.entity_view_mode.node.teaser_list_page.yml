@@ -1,0 +1,10 @@
+uuid: 157b43f3-754b-4e3c-b0ad-1acf278d7fba
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_list_page
+label: 'Accroche page de liste des articles'
+targetEntityType: node
+cache: true

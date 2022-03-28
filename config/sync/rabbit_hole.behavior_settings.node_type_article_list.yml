@@ -1,0 +1,14 @@
+uuid: 34a10511-dc22-42ff-8771-4d734da0bd63
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.article_list
+id: node_type_article_list
+entity_type_id: node_type
+entity_id: article_list
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

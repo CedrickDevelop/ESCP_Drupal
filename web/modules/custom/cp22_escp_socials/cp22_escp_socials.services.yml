@@ -1,0 +1,6 @@
+services:
+  #Manager
+  Drupal\cp22_escp_socials\Manager\SocialsTermsManager:
+    class: Drupal\cp22_escp_socials\Manager\SocialsTermsManager
+    arguments: ['@entity_type.manager',
+                '@Drupal\cp22_escp_global\Gateway\BasicListOfTaxonomyTermsGateway']

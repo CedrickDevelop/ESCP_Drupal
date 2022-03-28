@@ -1,0 +1,104 @@
+.ParagraphMedia {
+
+  &-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 4.167rem;
+    line-height: 4.583;
+    color: $color-black;
+    position: relative;
+    margin-left: 4rem;
+  }
+
+  &-title:before {
+    content:"[";
+    font-weight: 400;
+    font-size: 6rem;
+    color: $color-dark-blue;
+    position: absolute;
+    top:-4.8rem;
+    left: -3rem;
+
+  }
+
+  &-media {
+    width:134.6rem;
+
+    //@extend %_flexCenter;
+    position: relative;
+    cursor: pointer;
+
+    img {
+        margin: auto;
+        width:134.6rem;
+        object-fit: cover;
+    }
+
+    .videoWrapper {
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+
+      &-image-video {
+        margin: auto;
+        height: 100%;
+        object-fit: cover;
+
+        &::before {
+          content: "\f330";
+          @extend %_fontAwesomeBase;
+          position: absolute;
+          text-align: center;
+          font-size: 8rem;
+          width: 8rem;
+          height: 8rem;
+          color:$color-white;
+          top:50%;
+          left:50%;
+          transform: translateY(-50%);
+          z-index: 11;
+
+        }
+
+        &::after {
+          content:"";
+          position: absolute;
+          background-color: $color-media-hover;
+          opacity: 0.5;
+          top:0;
+          left:0;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+
+        }
+      }
+
+      .video-close {
+        display: none;
+      }
+
+      &-video {
+        display: none;
+      }
+
+      .video-open {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .media-oembed-content{
+          margin: auto;
+          width: 100%;
+          height: 100%;
+
+        }
+
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,19 @@
+uuid: 938dc383-9f94-4b47-9dea-f9e96b8f1a91
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: iWWAHIiwVGweQK02isf6WcfhCJsdnOqP_DD40WAP1GY
+name: 'Page d''accueil'
+type: home
+description: 'La page d''accueil est la première page qui sera ouverte sur ce site et référence les informations principales'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

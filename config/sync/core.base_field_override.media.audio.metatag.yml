@@ -1,0 +1,18 @@
+uuid: ddc51d2f-4fdd-4b0e-b617-2d9467acc5d9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.metatag
+field_name: metatag
+entity_type: media
+bundle: audio
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Les balises méta de l''entité.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

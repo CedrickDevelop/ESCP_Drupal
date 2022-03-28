@@ -1,0 +1,23 @@
+uuid: c0f72c86-f7b0-4e4e-99c0-c96d4fba9260
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_position
+    - paragraphs.paragraphs_type.promotion
+  module:
+    - options
+id: paragraph.promotion.field_image_position
+field_name: field_image_position
+entity_type: paragraph
+bundle: promotion
+label: 'Position de l’image'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

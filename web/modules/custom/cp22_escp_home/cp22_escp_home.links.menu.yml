@@ -1,0 +1,192 @@
+#### ACCUEIL
+cp22_escp_home.home:
+  title: "Accueil"
+  parent: contrib
+  menu_name: contrib
+  url: internal:/
+  weight: 0
+
+cp22_escp_home.home.edit:
+  title: "Modifier la page d'accueil"
+  parent: cp22_escp_home.home
+  menu_name: contrib
+  route_name: bo_additions.node_edit
+  options:
+    query:
+      type: 'home'
+      status: '1'
+  weight: 0
+
+cp22_escp_home.home.front:
+  title: "Retourner sur la page d'accueil"
+  parent: cp22_escp_home.home
+  menu_name: contrib
+  url: internal:/
+  weight: 1
+
+#### *********************************
+#### Les menus
+cp22_escp_global.structure:
+  title: "Les menus"
+  parent: contrib
+  menu_name: contrib
+  url: internal:/
+  weight: 1
+
+#### Page Structure -- Main menu
+cp22_escp_global.structure.main_menu:
+  title: "Modifier le menu principal"
+  parent: cp22_escp_global.structure
+  menu_name: contrib
+  url: internal:/admin/structure/menu/manage/main
+  weight: 0
+
+#### Page Structure -- Footer menu
+cp22_escp_global.structure.footer_newsletter:
+  title: "Modifier le titre de la newsletter"
+  parent: cp22_escp_global.structure
+  menu_name: contrib
+  url: internal:/admin/structure/block/manage/newsletter
+  weight: 1
+
+#### Page Structure -- Footer menu
+cp22_escp_global.structure.footer_socials:
+  title: "Modifier le titre des réseaux sociaux"
+  parent: cp22_escp_global.structure
+  menu_name: contrib
+  url: internal:/admin/structure/block/manage/socialslist
+  weight: 2
+
+#### Page Structure -- Footer menu
+cp22_escp_global.structure.footer_socials_list:
+  title: "Modifier les réseaux sociaux"
+  parent: cp22_escp_global.structure
+  menu_name: contrib
+  url: internal:/admin/structure/taxonomy/manage/social_network/overview
+  weight: 3
+
+
+#### Page Structure -- Footer menu
+cp22_escp_global.structure.footer_menu:
+  title: "Modifier le menu pied de page"
+  parent: cp22_escp_global.structure
+  menu_name: contrib
+  url: internal:/admin/structure/menu/manage/footer
+  weight: 4
+
+
+
+#**********************
+#### les taxonomies
+cp22_escp_global.taxo:
+  title: "Les taxonomies"
+  parent: contrib
+  menu_name: contrib
+  url: internal:/admin/structure/taxonomy
+  weight: 4
+
+#**********************
+
+#### Page Médias
+cp22_escp_global.medias:
+  title: "Media"
+  parent: contrib
+  menu_name: contrib
+  url: internal:/admin/content/media
+  weight: 21
+
+#### Page Médias -- Voir tout
+cp22_escp_global.medias.show:
+  title: "Voir tous les médias"
+  parent: cp22_escp_global.medias
+  menu_name: contrib
+  url: internal:/admin/content/media
+  weight: 0
+
+#### Page Médias -- Images
+cp22_escp_global.medias.images:
+  title: "Images"
+  parent: cp22_escp_global.medias
+  menu_name: contrib
+  url: internal:/admin/content/media
+  options:
+    query:
+      type[0]: 'image'
+  weight: 1
+
+cp22_escp_global.medias.images.show:
+  title: "Voir la liste"
+  parent: cp22_escp_global.medias.images
+  menu_name: contrib
+  url: internal:/admin/content/media
+  options:
+    query:
+      type[0]: 'image'
+  weight: 0
+
+cp22_escp_global.medias.images.add:
+  title: "Ajouter"
+  parent: cp22_escp_global.medias.images
+  menu_name: contrib
+  url: internal:/media/add/image
+  weight: 1
+
+#### Page Médias -- Videos
+cp22_escp_global.medias.videos:
+  title: "Videos"
+  parent: cp22_escp_global.medias
+  menu_name: contrib
+  url: internal:/admin/content/media
+  options:
+    query:
+      type[0]: 'remote_video'
+  weight: 2
+
+cp22_saulnier_global.medias.videos.show:
+  title: "Voir la liste"
+  parent: cp22_escp_global.medias.videos
+  menu_name: contrib
+  url: internal:/admin/content/media
+  options:
+    query:
+      type[0]: 'remote_video'
+  weight: 0
+
+cp22_escp_global.medias.videos.add:
+  title: "Ajouter"
+  parent: cp22_escp_global.medias.videos
+  menu_name: contrib
+  url: internal:/media/add/remote_video
+  weight: 1
+
+#### Page Médias -- Documents
+cp22_escp_global.medias.documents:
+  title: "Documents"
+  parent: cp22_escp_global.medias
+  menu_name: contrib
+  url: internal:/admin/content/media
+  options:
+    query:
+      type[0]: 'remote_video'
+  weight: 3
+
+cp22_saulnier_global.medias.documents.show:
+  title: "Voir la liste"
+  parent: cp22_escp_global.medias.documents
+  menu_name: contrib
+  url: internal:/admin/content/media
+  options:
+    query:
+      type[0]: 'document'
+  weight: 0
+
+cp22_escp_global.medias.documents.add:
+  title: "Ajouter"
+  parent: cp22_escp_global.medias.documents
+  menu_name: contrib
+  url: internal:/media/add/document
+  weight: 1
+
+###La RECHERCHE
+# Le titre de l'ecran de recherche
+# placeholder de l'input administrable

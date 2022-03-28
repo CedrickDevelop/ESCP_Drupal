@@ -1,0 +1,59 @@
+uuid: 1c5b35e5-0767-4c95-8347-2100ac506a25
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.teaser_author_homepage
+    - image.style.teaser_author_homepage_2x
+  theme:
+    - cp22_escp_theme
+id: teaser_author_homepage
+label: 'Teaser Author Homepage'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage_2x
+    breakpoint_id: cp22_escp_theme.desktop
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage_2x
+    breakpoint_id: cp22_escp_theme.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage_2x
+    breakpoint_id: cp22_escp_theme.desktop
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage_2x
+    breakpoint_id: cp22_escp_theme.tablet
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage
+    breakpoint_id: cp22_escp_theme.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage_2x
+    breakpoint_id: cp22_escp_theme.tablet
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage
+    breakpoint_id: cp22_escp_theme.mobile
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage
+    breakpoint_id: cp22_escp_theme.mobile
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: teaser_author_homepage
+    breakpoint_id: cp22_escp_theme.mobile
+    multiplier: 2x
+breakpoint_group: cp22_escp_theme
+fallback_image_style: teaser_author_homepage

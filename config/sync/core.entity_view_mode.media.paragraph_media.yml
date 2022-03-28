@@ -1,0 +1,10 @@
+uuid: 32b4516e-21b6-4242-a2ce-de8c53ed0500
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.paragraph_media
+label: 'Paragraphe média'
+targetEntityType: media
+cache: true

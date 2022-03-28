@@ -1,0 +1,15 @@
+uuid: 1b4c5b53-3093-465a-983a-f888e4a67161
+langcode: fr
+status: true
+dependencies: {  }
+name: suggest_paragraph
+label: 'Paragraphe suggestions(524 x 328)'
+effects:
+  347dadf3-059d-4147-a6ab-b81ebdc4bee9:
+    uuid: 347dadf3-059d-4147-a6ab-b81ebdc4bee9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 524
+      height: 328
+      anchor: center-center

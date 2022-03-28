@@ -1,0 +1,17 @@
+uuid: 7e8bad4e-c3ff-4ac6-a319-8be88d442e9a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Article
+type: article
+description: 'Les articles qui agrémentent ce site'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,26 @@
+uuid: c8940715-cf5a-4faa-9786-d3635957d08a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_homepage
+    - field.field.node.author.field_biography
+    - field.field.node.author.field_visual
+    - node.type.author
+  module:
+    - user
+id: node.author.teaser_homepage
+targetEntityType: node
+bundle: author
+mode: teaser_homepage
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_biography: true
+  field_visual: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,33 @@
+uuid: 585d1ebd-e4fb-4fff-ba9e-a2130ded412d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: french_author_path
+label: 'chemin auteur node francais'
+type: 'canonical_entities:node'
+pattern: '/auteurs/[node:title]'
+selection_criteria:
+  7424c3ae-c571-4890-8bb0-e3b3c697630f:
+    id: node_type
+    negate: false
+    uuid: 7424c3ae-c571-4890-8bb0-e3b3c697630f
+    context_mapping:
+      node: node
+    bundles:
+      author: author
+  0f57538b-6b24-4f39-bec3-d29fa7c7b1a3:
+    id: language
+    negate: false
+    uuid: 0f57538b-6b24-4f39-bec3-d29fa7c7b1a3
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      fr: fr
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Langue

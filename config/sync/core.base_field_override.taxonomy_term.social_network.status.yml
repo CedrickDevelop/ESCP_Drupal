@@ -1,0 +1,22 @@
+uuid: 3205e385-65e1-4d15-baff-da6481cb6706
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_network
+id: taxonomy_term.social_network.status
+field_name: status
+entity_type: taxonomy_term
+bundle: social_network
+label: Publié
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

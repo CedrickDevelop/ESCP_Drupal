@@ -1,0 +1,18 @@
+uuid: b733e8be-e04d-4c86-966f-415014f1f4a5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_network
+id: taxonomy_term.social_network.name
+field_name: name
+entity_type: taxonomy_term
+bundle: social_network
+label: Nom
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

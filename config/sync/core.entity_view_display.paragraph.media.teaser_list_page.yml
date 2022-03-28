@@ -1,0 +1,26 @@
+uuid: 82b0739e-0e99-4413-bca5-8a52b99ef541
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser_list_page
+    - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_title
+    - paragraphs.paragraphs_type.media
+id: paragraph.media.teaser_list_page
+targetEntityType: paragraph
+bundle: media
+mode: teaser_list_page
+content:
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: paragraph_media
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_title: true
+  search_api_excerpt: true

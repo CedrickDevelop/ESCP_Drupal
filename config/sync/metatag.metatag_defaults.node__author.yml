@@ -1,0 +1,30 @@
+uuid: 188510dd-2eb0-4eac-9db3-61a19f6ba268
+langcode: fr
+status: true
+dependencies: {  }
+id: node__author
+label: 'Contenu: Auteur'
+tags:
+  content_language: '[node:langcode]'
+  description: '[node:field_biography]'
+  abstract: '[node:field_biography]'
+  title: '[node:title]'
+  thumbnail: '[node:field_visual:entity:field_media_image:facebook_meta_image:url]'
+  og_image_type: '[node:field_visual:entity:field_media_image:entity:mimetype]'
+  og_image_alt: '[node:field_visual:entity:field_media_image:alt]'
+  og_site_name: '[site:name]'
+  og_image_url: '[current-page:url:absolute]'
+  og_title: '[node:title]'
+  og_type: '[node:content-type:name]'
+  og_url: '[url:path]'
+  og_image_height: '[node:field_visual:entity:field_media_image:facebook_meta_image:height]'
+  og_description: '[node:field_biography]'
+  og_image: '[node:field_visual:entity:field_media_image:facebook_meta_image:url]'
+  og_image_width: '[node:field_visual:entity:field_media_image:facebook_meta_image:width]'
+  twitter_cards_image_height: '[node:field_visual:entity:field_media_image:facebook_meta_image:height]'
+  twitter_cards_title: '[node:title]'
+  twitter_cards_image: '[node:field_visual:entity:field_media_image:facebook_meta_image:url]'
+  twitter_cards_type: summary
+  twitter_cards_description: '[node:field_biography]'
+  twitter_cards_page_url: '[url:path]'
+  twitter_cards_image_width: '[node:field_visual:entity:field_media_image:facebook_meta_image:width]'

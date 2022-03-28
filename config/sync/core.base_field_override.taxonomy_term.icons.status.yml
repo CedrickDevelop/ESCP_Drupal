@@ -1,0 +1,22 @@
+uuid: b66ea9bd-a02d-4417-a805-423a27c04e09
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+id: taxonomy_term.icons.status
+field_name: status
+entity_type: taxonomy_term
+bundle: icons
+label: Publié
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

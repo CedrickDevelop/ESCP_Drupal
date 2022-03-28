@@ -1,0 +1,19 @@
+uuid: b45f1b35-d028-4bdc-b7af-9ff3ad96e34f
+langcode: fr
+status: true
+dependencies: {  }
+id: taxonomy_term__themes
+label: 'Terme de taxonomie: Thématiques'
+tags:
+  content_language: '[term:langcode]'
+  description: '[term:field_chapo]'
+  abstract: '[term:field_chapo]'
+  title: '[term:title]'
+  og_site_name: '[site:name]'
+  og_title: '[term:title]'
+  og_type: '[term:content-type:name]'
+  og_url: '[url:path]'
+  og_description: '[term:field_chapo]'
+  twitter_cards_title: '[term:title]'
+  twitter_cards_description: '[term:field_chapo]'
+  twitter_cards_page_url: '[url:path]'

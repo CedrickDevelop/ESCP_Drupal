@@ -1,0 +1,33 @@
+uuid: 09fc31fc-1871-49b5-8966-ff0910fcfbbd
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: author_node_english
+label: 'chemin auteur node anglais'
+type: 'canonical_entities:node'
+pattern: '/authors/[node:title]'
+selection_criteria:
+  32df8e9d-81c2-496f-8574-af63bc7c2f5f:
+    id: node_type
+    negate: false
+    uuid: 32df8e9d-81c2-496f-8574-af63bc7c2f5f
+    context_mapping:
+      node: node
+    bundles:
+      author: author
+  f6bf9b47-e99d-48ec-953d-81700fa72aec:
+    id: language
+    negate: false
+    uuid: f6bf9b47-e99d-48ec-953d-81700fa72aec
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Langue

@@ -1,0 +1,19 @@
+uuid: 0fff0b30-c0a0-4958-846c-a949c85619cb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.suggestions
+id: paragraph.suggestions.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: suggestions
+label: Titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

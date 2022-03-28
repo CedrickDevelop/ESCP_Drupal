@@ -1,0 +1,44 @@
+uuid: 5e97d61d-eea2-407f-834e-eb7d8bd0cc35
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.paragraphe_media
+    - image.style.paragraphe_media_2x
+  theme:
+    - cp22_escp_theme
+id: paragraph_media
+label: 'Paragraphe média'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraphe_media_2x
+    breakpoint_id: cp22_escp_theme.desktop
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraphe_media
+    breakpoint_id: cp22_escp_theme.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraphe_media_2x
+    breakpoint_id: cp22_escp_theme.desktop
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraphe_media_2x
+    breakpoint_id: cp22_escp_theme.tablet
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraphe_media
+    breakpoint_id: cp22_escp_theme.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraphe_media_2x
+    breakpoint_id: cp22_escp_theme.tablet
+    multiplier: 2x
+breakpoint_group: cp22_escp_theme
+fallback_image_style: paragraphe_media

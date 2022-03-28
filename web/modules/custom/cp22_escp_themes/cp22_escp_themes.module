@@ -1,0 +1,44 @@
+<?php
+
+use Drupal\cp22_escp_article\Manager\ArticleNodeManager;
+use Drupal\cp22_escp_themes\Manager\ThemesTermManager;
+use Drupal\cp22_escp_themes\Manager\ThemesTermManagerForBlock;
+use Drupal\taxonomy\TermInterface;
+
+
+function cp22_escp_themes_preprocess_taxonomy_term(&$variables) {
+
+  /** @var TermInterface $term */
+  $term = $variables['term'];
+  $view_mode_page = $variables['view_mode'];
+  $vid_page = $term->bundle();
+
+  $articleNodeManager = \Drupal::service(ArticleNodeManager::class);
+
+  if ( $vid_page == ThemesTermManager::VID && $view_mode_page === "full") {
+    // Get the term id to load good taxonomy terms
+    $termid = $term->id();
+
+    // Load variable's term name to build on the term full page
+    $variables['current_term_title'] = $term->getName();
+
+    // Load variable's form to filter on date
+    $variables['sort_date_form'] = \Drupal::formBuilder()->getForm('Drupal\cp22_escp_global\Form\GlobalNodeSortForm');
+    $date_sort = \Drupal::requestStack()->getCurrentRequest()->get('node_sort_changed_date_form');
+
+    // Load the nodes by term name and by date sort. These nodes are published and unpublished
+    $variables["#cache"]["tags"][] = 'node:article';
+    $variables['node_article_by_theme'] = $articleNodeManager->getBuiltNodesArticleWithPagerAndLanguageByTermByDate($date_sort,$termid);
+
+    // the pager of 10 articles
+    $variables['pager'] = [
+      '#type' =>  'pager'
+    ];
+  }
+}
+
+
+
+
+
+

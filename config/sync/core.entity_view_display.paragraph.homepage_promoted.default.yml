@@ -1,0 +1,47 @@
+uuid: 8d358a5c-efe2-4b4c-9f19-6a4a5a530c38
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_promoted.field_image
+    - field.field.paragraph.homepage_promoted.field_link
+    - field.field.paragraph.homepage_promoted.field_title_formatted
+    - paragraphs.paragraphs_type.homepage_promoted
+  module:
+    - link
+    - text
+id: paragraph.homepage_promoted.default
+targetEntityType: paragraph
+bundle: homepage_promoted
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_formatted:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

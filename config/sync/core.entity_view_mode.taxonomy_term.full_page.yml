@@ -1,0 +1,10 @@
+uuid: dbcf35e1-9c3a-4937-baaf-5191da60f7fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.full_page
+label: 'Page entière'
+targetEntityType: taxonomy_term
+cache: true

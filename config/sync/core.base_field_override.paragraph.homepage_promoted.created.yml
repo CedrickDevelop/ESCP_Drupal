@@ -1,0 +1,18 @@
+uuid: ba04b15b-cc5b-4663-b39e-165b791c1b60
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.homepage_promoted
+id: paragraph.homepage_promoted.created
+field_name: created
+entity_type: paragraph
+bundle: homepage_promoted
+label: 'Écrit le'
+description: 'Heure de création du paragraphe.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

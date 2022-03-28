@@ -1,0 +1,20 @@
+uuid: 0b2ae3fa-d0bd-4df3-87bb-e64272bceb9c
+langcode: en
+status: false
+dependencies:
+  module:
+    - cp22_escp_home
+  theme:
+    - cp22_escp_theme
+id: homepageslider
+theme: cp22_escp_theme
+region: content
+weight: 0
+provider: null
+plugin: cp22_escp_home_homepage_slider
+settings:
+  id: cp22_escp_home_homepage_slider
+  label: HomepageSlider
+  label_display: visible
+  provider: cp22_escp_home
+visibility: {  }

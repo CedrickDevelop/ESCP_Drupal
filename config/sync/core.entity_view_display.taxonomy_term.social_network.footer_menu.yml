@@ -1,0 +1,42 @@
+uuid: 5d23050e-0d0d-4c6b-ae73-d6d078c03f08
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.footer_menu
+    - field.field.taxonomy_term.social_network.field_icon
+    - field.field.taxonomy_term.social_network.field_url
+    - taxonomy.vocabulary.social_network
+  module:
+    - text
+id: taxonomy_term.social_network.footer_menu
+targetEntityType: taxonomy_term
+bundle: social_network
+mode: footer_menu
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

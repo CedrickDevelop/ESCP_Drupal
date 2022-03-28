@@ -1,0 +1,52 @@
+uuid: 05a46445-e5f9-41ba-becf-a5737e019992
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_homepage_promoted
+    - node.type.home
+    - paragraphs.paragraphs_type.homepage_promoted
+  module:
+    - entity_reference_revisions
+id: node.home.field_homepage_promoted
+field_name: field_homepage_promoted
+entity_type: node
+bundle: home
+label: 'Mises en avant Home'
+description: 'Vous ne pouvez ajouter que 2 paragraphes mise en avant.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      homepage_promoted: homepage_promoted
+    negate: 0
+    target_bundles_drag_drop:
+      file:
+        weight: 9
+        enabled: false
+      homepage_promoted:
+        weight: 10
+        enabled: true
+      image_text:
+        weight: 11
+        enabled: false
+      link:
+        weight: 12
+        enabled: false
+      media:
+        weight: 16
+        enabled: false
+      promotion:
+        weight: 13
+        enabled: false
+      suggestions:
+        weight: 14
+        enabled: false
+      wysiwyg:
+        weight: 15
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,27 @@
+uuid: 7585f006-957b-441f-a6a3-1c328f25a86e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_image_position
+field_name: field_image_position
+entity_type: paragraph
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: gauche
+    -
+      value: 1
+      label: droite
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

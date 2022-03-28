@@ -1,0 +1,18 @@
+uuid: 0693884b-bacc-45ae-9e93-ef91108ac460
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.wysiwyg
+id: paragraph.wysiwyg.created
+field_name: created
+entity_type: paragraph
+bundle: wysiwyg
+label: 'Écrit le'
+description: 'Heure de création du paragraphe.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

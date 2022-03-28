@@ -1,0 +1,49 @@
+uuid: 65f606b1-9bd8-4fb6-891c-c0047b6bad74
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promotion.field_article
+    - field.field.paragraph.promotion.field_image_position
+    - field.field.paragraph.promotion.field_link
+    - paragraphs.paragraphs_type.promotion
+  module:
+    - link
+id: paragraph.promotion.default
+targetEntityType: paragraph
+bundle: promotion
+mode: default
+content:
+  field_article:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_position:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

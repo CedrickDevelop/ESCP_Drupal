@@ -1,0 +1,33 @@
+uuid: 0352beda-948e-410c-991e-8e849d432e9c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: article_list_page_french
+label: 'chemin page des articles francais'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  40c891ac-1f6c-4411-952c-2bd2a1aea810:
+    id: node_type
+    negate: false
+    uuid: 40c891ac-1f6c-4411-952c-2bd2a1aea810
+    context_mapping:
+      node: node
+    bundles:
+      article_list: article_list
+  11b5f0e1-f159-4a5c-8c11-d3a62d8f47a6:
+    id: language
+    negate: false
+    uuid: 11b5f0e1-f159-4a5c-8c11-d3a62d8f47a6
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      fr: fr
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Langue

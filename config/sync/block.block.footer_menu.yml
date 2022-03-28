@@ -1,0 +1,25 @@
+uuid: 4505b20f-0077-48e8-a856-9e65b6c7b5f4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - cp22_escp_theme
+id: footer_menu
+theme: cp22_escp_theme
+region: footer
+weight: -1
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Pied de page'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

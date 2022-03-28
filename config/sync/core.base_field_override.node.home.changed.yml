@@ -1,0 +1,18 @@
+uuid: dfeef728-c9ca-4540-a2a2-c8240f7e262d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.home
+id: node.home.changed
+field_name: changed
+entity_type: node
+bundle: home
+label: Modifié
+description: 'La date à laquelle le nœud a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

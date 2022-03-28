@@ -1,0 +1,24 @@
+####
+cp22_escp_themes.taxo.themes:
+  title: "Les thématiques"
+  parent: cp22_escp_global.taxo
+  menu_name: contrib
+  url: internal:/admin/structure/taxonomy/manage/themes/overview
+  weight: 0
+
+####
+cp22_escp_themes.taxo.themes.show:
+  title: "Voir les thématiques"
+  parent: cp22_escp_themes.taxo.themes
+  menu_name: contrib
+  url: internal:/admin/structure/taxonomy/manage/themes/overview
+  weight: 0
+
+####
+cp22_escp_themes.taxo.themes.add:
+  title: "Ajouter une thématiques"
+  parent: cp22_escp_themes.taxo.themes
+  menu_name: contrib
+  url: internal:/admin/structure/taxonomy/manage/themes/add
+  weight: 1
+

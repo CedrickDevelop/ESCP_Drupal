@@ -1,0 +1,15 @@
+uuid: 4aab5699-d1aa-4c07-9739-fc3f04829f02
+langcode: fr
+status: true
+dependencies: {  }
+name: teaser_author_homepage_2x
+label: 'Teaser Author Homepage(478x416)'
+effects:
+  a8a976ed-7cbe-453a-ad8c-7a4794319379:
+    uuid: a8a976ed-7cbe-453a-ad8c-7a4794319379
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 478
+      height: 416
+      anchor: center-center

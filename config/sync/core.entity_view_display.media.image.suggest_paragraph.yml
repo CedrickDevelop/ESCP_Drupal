@@ -1,0 +1,36 @@
+uuid: 2e8a334f-8327-4885-add1-b67edd5e9a1a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.suggest_paragraph
+    - field.field.media.image.field_copyright
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.suggest_paragraph
+  module:
+    - responsive_image
+_core:
+  default_config_hash: EP_ezL35cTO1NM5uCPjelHXGLBrIGEwILURP3w-m2FM
+id: media.image.suggest_paragraph
+targetEntityType: media
+bundle: image
+mode: suggest_paragraph
+content:
+  field_media_image:
+    type: responsive_image
+    label: visually_hidden
+    settings:
+      responsive_image_style: suggest_paragraph
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_copyright: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,16 @@
+uuid: e1683cd3-7c76-48b3-a2ea-d15292a6ab69
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tyYAFtu1bNba1GAGshkol0tuLZxj4pLYQ27sjNvVmzo
+id: image
+label: Image
+description: 'Utilisation d''images locales à utiliser et proposer sur le site'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

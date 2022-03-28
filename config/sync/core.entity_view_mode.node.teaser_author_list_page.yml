@@ -1,0 +1,10 @@
+uuid: e3f16ec0-7838-42f7-920e-c875b4c8cf6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_author_list_page
+label: 'Accroche page de liste des auteurs'
+targetEntityType: node
+cache: true

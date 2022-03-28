@@ -1,0 +1,244 @@
+@import "menuPrincipal";
+@import "hamburger";
+@import "languageSelector";
+
+#Header {
+
+  padding-left: 5.3rem;
+  padding-top: 10.5rem;
+  padding-right: 6.2rem;
+  padding-bottom: 2.7rem;
+
+  //background-color: #240E85;
+  background-image: url("../img/backgroundheader.png");
+  color:white;
+
+  height: 31.9rem;
+
+
+  .TopHeader{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      width: 16.1rem;
+      margin-top: 0.5rem;
+
+      a{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        img{
+          object-fit: cover;
+        }
+      }
+
+    }
+
+    &-title {
+      font-size: 4.061rem;
+      text-align: center;
+      letter-spacing: 0.244rem;
+      line-height: 0.498rem;
+      text-transform: uppercase;
+
+
+      h1{
+        position: relative;
+        .thin {
+          font-family: Montserrat;
+          font-weight: 300;
+
+          .bold {
+            font-family: Montserrat;
+            font-weight: 700;
+          }
+
+
+        }
+        span {
+          margin-left: -1.3rem;
+        }
+        span:first-of-type {
+          margin-left: 0;
+        }
+      }
+
+      h1::before{
+        content: "[";
+        color: $header-element-addon;
+        font-size: 8rem;
+        position: absolute;
+        top:-0.8rem;
+        left: -3rem;
+
+      }
+    }
+
+    &-language {
+      ul {
+        display: flex;
+
+
+        li {
+          text-transform: uppercase;
+          font-size: 2.826rem;
+          letter-spacing: 0.057rem;
+
+        }
+
+        li:first-of-type::after {
+          content:"/";
+          font-size: 2.826rem ;
+          line-height: 3.46rem;
+          padding-left: 0.5rem;
+
+        }
+
+        li:last-of-type::before {
+          content:"";
+          font-size: 2.826rem ;
+          line-height: 3.46rem;
+          padding-right: 0.5rem;
+
+        }
+      }
+    }
+  }
+
+  .BottomHeader{
+
+    display: flex;
+    justify-content: space-between;
+
+    &-menuMain {
+      width: 90%;
+      ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+
+        li {
+          font-size: 2.34rem;
+          letter-spacing: 0.287rem;
+          text-align: center;
+          margin-right: 2rem;
+          text-transform: uppercase;
+
+        }
+
+        li::after {
+          content:"|";
+          margin-left: 2rem;
+          color:$header-element-addon;
+        }
+
+        li:last-of-type::after {
+          display: none;
+        }
+      }
+    }
+
+    &-search {
+      display: none;
+      #block-global-search{
+        #views-exposed-form-global-search-page-1{
+
+          z-index:12;
+          position:absolute;
+          width: 100%;
+          height: 100%;
+          left:0;
+          top:0;
+          background-color: $background-color-search;
+          opacity: 0.95;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .js-form-item {
+            width:69.1rem;
+            height: 3rem;
+            margin-left: 0;
+            margin-right: 5rem;
+
+
+            label {
+              font-size: 6rem;
+              font-family: Montserrat;
+              font-weight: 700;
+              display: block;
+              width: 69.1rem;
+              text-align: center;
+            }
+
+            input {
+              color: $color-placeholder-search;
+              padding-bottom: 1rem;
+            }
+
+            .form-text {
+              margin-top: 6.4rem;
+              margin-left: -7rem;
+              width: 69.1rem;
+              height: 3rem;
+              border:none;
+              border-bottom: 2px solid $header-element-addon;
+              text-align: left;
+              font-size: 2.5rem;
+              font-family: Montserrat;
+              font-weight: 500;
+
+            }
+          }
+
+          .js-form-type-select {
+            display: none;
+          }
+
+          .form-actions {
+            position: absolute;
+            top:42%;
+            left: 80%;
+            width: 8rem;
+            height: 8rem;
+
+
+            input {
+              width: 15rem;
+              height: 15rem;
+              border: none;
+              color: transparent;
+              cursor: pointer;
+            }
+          }
+          .form-actions:after {
+            content: "\f002";
+            @extend %_fontAwesomeBase;
+            color:$color-button-search;
+            font-size: 6rem;
+            margin-top: -12rem;
+          }
+        }
+
+      }
+
+    }
+
+    &-buttonSearch {
+      display: inline-block;
+      align-self: flex-end;
+      margin-top: 6rem;
+      width: 4.5rem;
+      height: 4.5rem;
+      background-image: url("../img/loupe.svg");
+      background-repeat: no-repeat;
+      fill:$header-glass;
+      color:$header-glass;
+      cursor: pointer;
+    }
+  }
+}

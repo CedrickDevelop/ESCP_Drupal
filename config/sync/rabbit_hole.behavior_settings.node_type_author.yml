@@ -1,0 +1,14 @@
+uuid: 21ce6a5f-0eb6-4ff6-897c-b8c75df1f2bb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.author
+id: node_type_author
+entity_type_id: node_type
+entity_id: author
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

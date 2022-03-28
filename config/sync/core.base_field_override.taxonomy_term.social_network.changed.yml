@@ -1,0 +1,18 @@
+uuid: 7e50e981-cc90-43a1-997e-0dd38a20554a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_network
+id: taxonomy_term.social_network.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: social_network
+label: Modifié
+description: 'Le moment auquel le terme a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

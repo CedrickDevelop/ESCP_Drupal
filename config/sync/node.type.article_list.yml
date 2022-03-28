@@ -1,0 +1,17 @@
+uuid: 972257a0-01f4-4756-b6f0-457a9d23f3bb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Page de liste des articles'
+type: article_list
+description: 'Page de liste de tous les articles de ce site'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

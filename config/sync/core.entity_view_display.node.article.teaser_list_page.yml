@@ -1,0 +1,61 @@
+uuid: 26c86b5f-1708-490a-96fe-7a99ec0e9388
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_list_page
+    - field.field.node.article.field_author
+    - field.field.node.article.field_bounce_content
+    - field.field.node.article.field_chapo_long
+    - field.field.node.article.field_contents
+    - field.field.node.article.field_theme
+    - field.field.node.article.field_visual
+    - node.type.article
+  module:
+    - text
+    - user
+id: node.article.teaser_list_page
+targetEntityType: node
+bundle: article
+mode: teaser_list_page
+content:
+  field_author:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: teaser_list_page
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_chapo_long:
+    type: text_trimmed
+    label: above
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_theme:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_visual:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: teaser_article_list_page
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_bounce_content: true
+  field_contents: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

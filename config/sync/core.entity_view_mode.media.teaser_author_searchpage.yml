@@ -1,0 +1,10 @@
+uuid: 4ca9495c-0e47-4508-9bd6-0259baa9f8a6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.teaser_author_searchpage
+label: 'Teaser Author SearchPage'
+targetEntityType: media
+cache: true

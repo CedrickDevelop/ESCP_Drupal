@@ -1,0 +1,15 @@
+uuid: 0cea9031-8d0c-4cfc-b538-bd771fa0fae6
+langcode: fr
+status: true
+dependencies: {  }
+name: teaser_author_searchpage
+label: 'Teaser Author SearchPage (364 x 363)'
+effects:
+  9c7a37c7-183b-4f1d-8420-8a3ba73f5f23:
+    uuid: 9c7a37c7-183b-4f1d-8420-8a3ba73f5f23
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 364
+      height: 363
+      anchor: center-center

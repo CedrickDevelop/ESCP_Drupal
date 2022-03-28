@@ -1,0 +1,10 @@
+uuid: 21d907b1-9d29-4925-b6fe-feced1ed6ae5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.footer_menu
+label: 'Pied de page'
+targetEntityType: taxonomy_term
+cache: true

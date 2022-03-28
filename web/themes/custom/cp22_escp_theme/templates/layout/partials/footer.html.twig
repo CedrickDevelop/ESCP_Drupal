@@ -1,0 +1,17 @@
+<footer id="Footer" class="Footer">
+
+  <div class="Footer-newsletter">
+    <h2>{{ "<span>Subscribe to our</span> <strong>newsletter</strong>"|t }}</h2>
+    {{ newsletter_form }}
+
+    {% if formNewsLetterMail %}
+      <p>{{ "thank you" |t }} {{ formNewsLetterMail }}, {{ "to register on our newsletter" |t }} </p>
+    {% endif %}
+  </div>
+
+  <div class="Footer-menuLinks">
+    {{ footer }}
+  </div>
+
+
+</footer>

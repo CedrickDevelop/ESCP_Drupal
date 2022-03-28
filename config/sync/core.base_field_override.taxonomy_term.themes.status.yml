@@ -1,0 +1,22 @@
+uuid: f0998a9b-391c-4ed5-bca1-9a4a4e116e2e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.themes
+id: taxonomy_term.themes.status
+field_name: status
+entity_type: taxonomy_term
+bundle: themes
+label: Publié
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

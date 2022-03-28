@@ -1,0 +1,240 @@
+#MainWrapper {
+
+
+  .MainWrapper-page{
+
+    #block-formulaireexposeglobal-searchpage-1 {
+      padding-top: 9.316rem;
+      padding-left: 13.143rem;
+      padding-right: 10.8rem;
+
+      h2 {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 6.114rem;
+        text-align: left;
+        line-height: 6.114rem;
+        color: $color-black;
+      }
+
+      form {
+        display: flex;
+        justify-content: flex-end;
+
+        margin-top: 7.984rem;
+        select {
+          text-align: left;
+          font-size: 2rem;
+          line-height: 2.4rem;
+
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: $color-yellow-select;
+
+        }
+        select:after{
+          content:"\f061";
+          @extend %_fontAwesomeBase;
+          font-size: 2rem;
+          line-height: 2.4rem;
+          color: $color-black-label ;
+
+        }
+
+      }
+    }
+
+
+    .views-element-container {
+
+      padding-top: 0;
+      padding-left: 13.143rem;
+      padding-right: 10.8rem;
+      position: relative;
+
+      header {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 3.5rem;
+        text-align: left;
+        line-height: 2.8rem;
+        color: $color-header-search;
+
+        position: absolute;
+        top: -10rem;
+      }
+
+      .NodeSearchResultArticle {
+        height: 30rem;
+        width: 181.1rem;
+        margin: 3.8rem 0;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        background-color:$color-white ;
+        box-shadow: 0 0.3rem 0.6rem  $color-box-shadow-list-page;
+        border: 1px solid $background-list-page;
+
+        overflow: hidden;
+
+        &-visual{
+
+          width: 49rem;
+          min-width: 49rem;
+
+          img {
+            //height: 100%;
+          }
+
+          .copyright{
+            display: none;
+          }
+        }
+
+        &-contentWrapper {
+          padding-top: 2.1rem;
+          padding-left: 3rem;
+          padding-bottom: 2.2rem;
+          padding-right: 2.9rem;
+
+          .ContentArticle {
+            font-family: Montserrat;
+            font-weight: 400;
+            color: $color-black;
+
+            &-themes {
+              text-align: left;
+              text-transform: uppercase;
+              font-family: Montserrat;
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 2.4rem;
+              margin-bottom: 1.896rem;
+            }
+
+            &-created {
+              margin-top: 1.896rem;
+              margin-bottom: 1.904rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              font-family: $font-body;
+
+              .createdDateAuthor {
+
+                &-date {
+                  font-family: Montserrat;
+                  font-weight: 400;
+                  font-size: 1.628rem;
+                  line-height: 2rem;
+                }
+
+                &-author {
+                  font-family: Montserrat;
+                  font-weight: 400;
+                  font-size: 1.628rem;
+                  line-height: 2rem;
+
+                  span {
+                    display: inline-block;
+                  }
+                  .NodeAuthor-name {
+                    display: inline-block;
+                  }
+                }
+
+
+              }
+
+
+            }
+
+            &-title {
+              margin-top: 1.904rem;
+
+              font-weight: 500;
+              text-align: left;
+              font-size: 2.4rem;
+              line-height: 2.7rem;
+            }
+
+          }
+        }
+
+        &-search {
+          font-family: Montserrat;
+          font-weight: 400;
+          margin-top: 1.904rem;
+          text-align: left;
+          font-size: 2.4rem;
+          line-height: 2.7rem;
+          .highlighted {
+            font-family: Montserrat;
+            font-weight: 700;
+          }
+        }
+
+      }
+
+
+      .NodeSearchResultAuthor {
+        height: 36.3rem;
+        width: 181.1rem;
+        margin: 3.8rem 0;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        background-color:$color-white ;
+        box-shadow: 0 0.3rem 0.6rem  $color-box-shadow-list-page;
+        border: 1px solid $background-list-page;
+
+        overflow: hidden;
+
+        &-visual{
+          min-width: 36.4rem;
+          height: 36.3rem;
+
+        }
+
+        &-contentWrapper {
+          padding-top: 7.262rem;
+          padding-left: 3rem;
+          padding-bottom: 2.2rem;
+          padding-right: 14.5rem;
+          display: flex;
+          flex-direction: column;
+
+          .Content {
+            &-title {
+              font-family: Montserrat;
+              font-weight: 500;
+              font-size: 3.822rem;
+              line-height: 5rem;
+              color:$color-black;
+              text-align: left;
+            }
+
+            &-biography {
+              font-family: Montserrat;
+              font-weight: 300;
+              font-size: 3.822rem;
+              line-height: 5rem;
+              color:$color-black;
+              text-align: left;
+              margin-top: 2.5rem;
+            }
+          }
+
+          }
+        }
+      }
+    }
+  }
+
+

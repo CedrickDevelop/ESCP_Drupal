@@ -1,0 +1,18 @@
+uuid: fb6ffa6d-a754-4358-b6d2-e4bfbdc0bdcd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser_list_page
+    - field.field.taxonomy_term.themes.field_chapo
+    - taxonomy.vocabulary.themes
+id: taxonomy_term.themes.teaser_list_page
+targetEntityType: taxonomy_term
+bundle: themes
+mode: teaser_list_page
+content: {  }
+hidden:
+  description: true
+  field_chapo: true
+  langcode: true
+  search_api_excerpt: true
